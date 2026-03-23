@@ -38,7 +38,7 @@ app = Flask(__name__)
 # ============================================================================
 # CONSTANTS - 8 SALTS (2x more than original)
 # ============================================================================
-SECRET_KEY = b"C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Und3rst4nd1ng_4nd_C0mm1tm3nt_2024"
+SECRET_KEY = b"C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Und3rst4nd1ng_4nd_C0mm1tm3nt_2020"
 SALT_PRIMARY = b"l0v3_1s_n3v3r_s1mpl3_1t_t4k3s_w0rk"
 SALT_SECONDARY = b"r3l4t10nsh1ps_4r3_bu1lt_0n_trust"
 SALT_TERTIARY = b"c0mm1tm3nt_1s_th3_f0und4t10n"
@@ -395,7 +395,7 @@ def get_flag_part(part_number, session_id, timestamp):
     parts = [
         "TRACECTF{C0mpl1c4t3d_L0v3_",
         "R3qu1r3s_P4t13nc3_Trust_",
-        "4nd_Unw4v3r1ng_C0mm1tm3nt_2024}"
+        "4nd_Unw4v3r1ng_C0mm1tm3nt_2020}"
     ]
     
     if 0 <= part_number < len(parts):
@@ -877,7 +877,7 @@ def index():
                     <div class="crack"></div>
                 </div>
                 
-                <p class="subtitle">A NIGHTMARE Difficulty Challenge</p>
+                <p class="subtitle">Where Hearts Break and Secrets Hide</p>
                 
                 <div class="message">
                     <p><strong>They said love is simple.</strong></p>
@@ -887,66 +887,10 @@ def index():
                     <p>It demands proof of your dedication. It tests your resolve.</p>
                     <p><strong>Can you prove your love is real?</strong></p>
                 </div>
-                
-                <div class="info-grid">
-                    <div class="info-box">
-                        <div class="info-icon">🕐</div>
-                        <div class="info-title">Perfect Timing</div>
-                        <div class="info-text">2:00-2:30 PM IST</div>
-                    </div>
-                    <div class="info-box">
-                        <div class="info-icon">🔐</div>
-                        <div class="info-title">8 Proofs</div>
-                        <div class="info-text">All Required</div>
-                    </div>
-                    <div class="info-box">
-                        <div class="info-icon">🌍</div>
-                        <div class="info-title">Location</div>
-                        <div class="info-text">Matters</div>
-                    </div>
-                    <div class="info-box">
-                        <div class="info-icon">⏱️</div>
-                        <div class="info-title">Patience</div>
-                        <div class="info-text">Tested</div>
-                    </div>
-                </div>
-                
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-number">1500</div>
-                        <div class="stat-label">Points</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Headers</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">24</div>
-                        <div class="stat-label">Layers</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">&lt;1%</div>
-                        <div class="stat-label">Solve Rate</div>
-                    </div>
-                </div>
-                
-                <div class="warning">
-                    <div class="warning-icon">⚠️</div>
-                    <div class="warning-title">NIGHTMARE DIFFICULTY</div>
-                    <div class="warning-text">
-                        Expected solve time: 12-20 hours<br>
-                        8 salts • 6-layer HMAC • Proof of Work • TOTP • Fingerprinting<br>
-                        30+ decoy flags • Rate limiting • Dynamic salt rotation
-                    </div>
-                </div>
             </div>
         </div>
         
-        <!-- Hidden decoy flags -->
-        <!-- TRACECTF{HTML_s0urc3_w0nt_h3lp_y0u_th1s_t1m3_3v3n_w1th_b34ut1ful_4n1m4t10ns} -->
-        
         <script>
-            // Particle system
             function createParticles() {
                 const container = document.getElementById('particles');
                 for (let i = 0; i < 50; i++) {
@@ -959,7 +903,6 @@ def index():
                 }
             }
             
-            // Floating hearts
             function createHearts() {
                 const container = document.getElementById('hearts');
                 const heartEmojis = ['💔', '💕', '💖', '💗', '💘', '💝', '💞', '💟'];
@@ -977,7 +920,6 @@ def index():
                 }, 2000);
             }
             
-            // Shake heart on click
             function shakeHeart() {
                 const heart = document.querySelector('.broken-heart');
                 heart.style.animation = 'none';
@@ -985,7 +927,6 @@ def index():
                     heart.style.animation = 'heartbeat 2s ease-in-out infinite';
                 }, 10);
                 
-                // Create explosion effect
                 for (let i = 0; i < 10; i++) {
                     const mini = document.createElement('div');
                     mini.textContent = '💔';
@@ -1021,7 +962,6 @@ def index():
                 }
             }
             
-            // Mouse trail effect
             document.addEventListener('mousemove', (e) => {
                 if (Math.random() > 0.9) {
                     const trail = document.createElement('div');
@@ -1046,17 +986,8 @@ def index():
                 }
             });
             
-            // Initialize
             createParticles();
             createHearts();
-            
-            // Console decoy
-            console.log("%cTRACECTF{c0ns0l3_1s_f0r_d3bugg1ng_n0t_fl4gs_3v3n_w1th_pr3tty_c0l0rs}", 
-                "color: #f093fb; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);");
-            console.log("%c💔 Love Is Complicated 💔", 
-                "color: #fff; font-size: 24px; font-weight: bold; background: linear-gradient(45deg, #667eea, #764ba2); padding: 10px 20px; border-radius: 10px;");
-            console.log("%cNightmare Difficulty | 1500 Points | <1% Solve Rate", 
-                "color: #ff6b6b; font-size: 14px; font-weight: bold;");
         </script>
     </body>
     </html>
@@ -1079,16 +1010,14 @@ def confess():
     allowed, wait_time = check_rate_limit(ip_addr)
     if not allowed:
         return jsonify({
-            'error': 'Rate limited. Patience is a virtue.',
-            'wait_seconds': int(wait_time),
+            'error': 'Too many requests.',
             'decoy_flag': DECOY_FLAGS['rate_limited']
         }), 429
     
     # Time window check
     if not is_valid_time_window():
         return jsonify({
-            'error': 'Love cannot be rushed. Come back at the right time.',
-            'hint': '2:00-2:30 PM IST',
+            'error': 'Access denied.',
             'decoy_flag': DECOY_FLAGS['wrong_hour']
         }), 403
     
@@ -1096,7 +1025,7 @@ def confess():
     headers_valid, error_key = validate_headers(request.headers, None)
     if not headers_valid:
         return jsonify({
-            'error': 'Missing required headers.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS.get(error_key, DECOY_FLAGS['missing_header_1'])
         }), 400
     
@@ -1118,21 +1047,21 @@ def confess():
     timing_valid, timing_error = validate_precise_timing(timestamp)
     if not timing_valid:
         return jsonify({
-            'error': 'Timing is not perfect.',
+            'error': 'Invalid request.',
             'decoy_flag': DECOY_FLAGS.get(timing_error, DECOY_FLAGS['wrong_hour'])
         }), 403
     
     # User-Agent length check
     if len(user_agent) % 2 != 0:
         return jsonify({
-            'error': 'User-Agent length must be even.',
+            'error': 'Invalid request.',
             'decoy_flag': DECOY_FLAGS['ua_odd_length']
         }), 400
     
     # Proof of work validation
     if not verify_proof_of_work(timestamp, nonce):
         return jsonify({
-            'error': 'Proof of work invalid.',
+            'error': 'Verification failed.',
             'decoy_flag': DECOY_FLAGS['pow_failed']
         }), 400
     
@@ -1149,65 +1078,52 @@ def confess():
     # Validate fingerprint
     if fingerprint != expected_fingerprint:
         return jsonify({
-            'error': 'Fingerprint mismatch.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['wrong_fingerprint']
         }), 400
     
-    # Validate TOTP
     if totp != expected_totp:
         return jsonify({
-            'error': 'TOTP expired or invalid.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['invalid_totp']
         }), 400
     
-    # Validate token
     if token != expected_token:
         return jsonify({
-            'error': 'Token validation failed.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['wrong_token']
         }), 401
     
-    # Validate proof
     if proof != expected_proof:
         return jsonify({
-            'error': 'Proof validation failed.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['wrong_proof']
         }), 401
     
-    # Validate signature
     if signature != expected_signature:
         return jsonify({
-            'error': 'Signature validation failed.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['wrong_signature']
         }), 401
     
-    # Validate commitment
     if commitment != expected_commitment:
         return jsonify({
-            'error': 'Commitment validation failed.',
+            'error': 'Authentication failed.',
             'decoy_flag': DECOY_FLAGS['wrong_commitment']
         }), 401
     
-    # ALL VALIDATIONS PASSED - Return obfuscated flag
-    real_flag = "TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2024}"
+    real_flag = "TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2020}"
     obfuscated = obfuscate_flag(real_flag, timestamp)
     
     return jsonify({
         'success': True,
-        'message': 'Your love has been proven. True commitment revealed.',
-        'data': obfuscated,
-        'hint': 'Deobfuscate with 24 layers + XOR + Base85 + Base32'
+        'data': obfuscated
     }), 200
 
 @app.route('/robots.txt')
 def robots():
-    """Decoy robots.txt with fake endpoints"""
     return """User-agent: *
-Disallow: /api/secret
-Disallow: /api/admin
-Disallow: /api/flag
-Disallow: /api/hint
-# TRACECTF{r0b0ts_txt_1s_4_d3c0y_4g41n}
+Disallow: /
 """
 
 if __name__ == '__main__':

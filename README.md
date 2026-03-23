@@ -104,7 +104,7 @@ Precision: Within 20 seconds
 ## 🏆 Flag Format
 
 ```
-TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2024}
+TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2020}
 ```
 
 ---

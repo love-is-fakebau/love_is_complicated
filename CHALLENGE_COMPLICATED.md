@@ -143,7 +143,7 @@ Breakdown:
 ## 🔐 8 Salts to Discover
 
 ```python
-SECRET_KEY = b"C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Und3rst4nd1ng_4nd_C0mm1tm3nt_2024"
+SECRET_KEY = b"C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Und3rst4nd1ng_4nd_C0mm1tm3nt_2020"
 SALT_PRIMARY = b"l0v3_1s_n3v3r_s1mpl3_1t_t4k3s_w0rk"
 SALT_SECONDARY = b"r3l4t10nsh1ps_4r3_bu1lt_0n_trust"
 SALT_TERTIARY = b"c0mm1tm3nt_1s_th3_f0und4t10n"
@@ -252,7 +252,7 @@ Reverse 24 layers of encoding
 ## 🏆 Flag
 
 ```
-TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2024}
+TRACECTF{C0mpl1c4t3d_L0v3_R3qu1r3s_P4t13nc3_Trust_4nd_Unw4v3r1ng_C0mm1tm3nt_2020}
 ```
 
 ---
